@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+body,
+section,
+header,
+footer,
+div,
+ul {
+  min-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.flex-align-center {
+  align-content: center;
+}
+
+.flex-align-between {
+  align-content: space-between;
+}
+
+.flex-align-start {
+  align-content: flex-start;
+}
+
+.flex-align-end {
+  align-content: center;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-justify-between {
+  justify-content: space-between;
+}
+
+.flex-justify-start {
+  justify-content: flex-start;
+}
+
+.flex-justify-end {
+  justify-content: flex-end;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.btn {
+  min-width: 10em;
+  height: 3em;
+  text-decoration: none;
+  background: darkslateblue;
+  color: white;
+  text-align: center;
+  padding-top: 0.75em;
+  border-radius: 1em;
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.btn:hover {
+  background: transparent;
+  border: 1px solid darkslateblue;
+}
+
+.top-bar {
+  position: fixed;
+  height: auto;
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.top-bar .logo-bar {
+  min-width: 3em;
+  width: 10em;
+  cursor: pointer;
+}
+
+.top-bar .menu-bar {
+  min-width: 50%;
+}
+
+.menu-bar li {
+  padding: 1.75em 1em;
+  color: #111;
+  transition: all 1s;
+}
+
+.menu-bar li:hover {
+  cursor: pointer;
+  color: darkblue;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.banner {
+  width: 100vw;
+  height: 85vh;
+  background: url(assets/img/bg/pexels-pixabay-258160.jpg) fixed center
+    no-repeat;
+}
+
+.banner h1 {
+  width: 65%;
+  padding-left: 2em;
+  font-size: 4em;
+  color: white;
+  text-align: left;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+.info-msg {
+  padding: 3em 6em;
+  height: 45vh;
+}
+
+.info.msg h2 {
+  text-align: center;
+  margin-bottom: 1.5em;
+  max-width: 30em;
+}
+.info-msg p {
+  text-align: center;
+  margin: 0.5em auto;
+  max-width: 30em;
+}
+
+.info-detalhes {
+  padding: 1em 2em 6em 2em;
+}
+
+.info-card {
+  min-width: 10em;
+  max-width: 18em;
+  min-height: 25em;
+  border: 1px solid #ccc;
+  margin-bottom: 1em;
+  padding: 3em 2em;
+  border-radius: 0.25em;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.info-card:hover {
+  cursor: pointer;
+  background: darkslateblue;
+  border-color: darkslateblue;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.info-card:hover i {
+  color: white;
+}
+.info-card i {
+  color: darkslateblue;
+}
+
+.info-card .card-title {
+  padding: 1em 0;
+}
+
+.info-card .card-title h4 {
+  text-align: center;
+  width: 100%;
+}
+
+.info-card .card-text {
+  line-height: 1.6;
+}
+
+.empresa .empresa-detalhes {
+  height: auto;
+  background: #111;
+}
+
+.empresa .empresa-imagem,
+.empresa .empresa-container {
+  width: 50%;
+  min-width: 50%;
+}
+
+.empresa .empresa-imagem img {
+  height: 80vh;
+  min-height: 25em;
+}
+
+.empresa .empresa-container {
+  padding: 0 3em;
+  color: white;
+}
+
+.empresa .empresa-container h3,
+.empresa .empresa-container p {
+  margin-bottom: 1em;
+}
+
+.empresa-lista-item {
+  margin-bottom: 1.75em;
+}
+
+.empresa-container i {
+  width: auto;
+  max-width: 3em;
+  flex: 1;
+  color: darkslateblue;
+  text-align: center;
+}
+
+.empresa-conteudo {
+  min-width: 20em;
+  max-width: 40em;
+  flex: 1;
+  padding-left: 0.5em;
+}
+
+.empresa-conteudo h3,
+.empresa-conteudo p {
+  width: 100%;
+}
